@@ -29,6 +29,7 @@ PM> Install-Package Pingdom.Client
 	<add key="pingdom:AppKey" value="{enter your appKey}" />
 	<add key="pingdom:UserName" value="{enter your userName}" />
 	<add key="pingdom:Password" value="{enter your password}" />
+	<add key="pingdom:AccountEmail" value="{enter your email address}" />
 </appSettings>
 ```
 

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Pingdom.Client</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>https://github.com/BforBen</authors>
+    <owners>https://github.com/BforBen</owners>
+    <projectUrl>https://github.com/BforBen/pingdom.client</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>C# TypeSafe Client wrapper for Pingdom APIs v2.0 forked and updated from https://github.com/alanrsoares/pingdom.client</description>
+    <tags> pingdom client typesafe c# restful </tags>
+  </metadata>
+</package>
