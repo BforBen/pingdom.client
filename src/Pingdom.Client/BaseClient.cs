@@ -88,7 +88,7 @@
             using (var reader = new StreamReader(stream))
             {
                 var jsonString = await reader.ReadToEndAsync();
-                return await JsonConvert.DeserializeObjectAsync<T>(jsonString);
+                return await Task.Factory.StartNew(() => JsonConvert.DeserializeObject<T>(jsonString));
             }
         }
 

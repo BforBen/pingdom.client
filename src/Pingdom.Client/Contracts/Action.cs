@@ -17,7 +17,7 @@
         /// <summary>
         /// Identifier of alerted contact
         /// </summary>
-        public int ContactId { get; set; }
+        public int? ContactId { get; set; }
 
         /// <summary>
         /// Name of alerted contact

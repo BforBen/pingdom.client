@@ -8,7 +8,7 @@ namespace PingdomClient.Tests
 {
     public class PingdomClientResourcesTests_Performance
     {
-        const int checkID = 1308096;
+        const int checkID = 1484163;
 
         [Test]
         public async Task GetSummaryPerformance_WithoutArgs()

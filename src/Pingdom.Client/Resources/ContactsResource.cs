@@ -17,7 +17,7 @@ namespace PingdomClient.Resources
         /// <returns></returns>
         public Task<GetContactsListResponse> GetContactsList()
         {
-            return Client.GetAsync<GetContactsListResponse>("contacts/");
+            return Client.GetAsync<GetContactsListResponse>("notification_contacts/");
         }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace PingdomClient.Resources
         /// <returns></returns>
         public Task<CreateNewContactResponse> CreateNewContact(object contact)
         {
-            return Client.PostAsync<CreateNewContactResponse>("contacts/", contact);
+            return Client.PostAsync<CreateNewContactResponse>("notification_contacts/", contact);
         }
 
         /// <summary>
@@ -38,7 +38,7 @@ namespace PingdomClient.Resources
         /// <returns></returns>
         public Task<PingdomResponse> ModifyContact(int contactId, object contact)
         {
-            var apiMethod = string.Format("contacts/{0}", contactId);
+            var apiMethod = string.Format("notification_contacts/{0}", contactId);
             return Client.PutAsync<PingdomResponse>(apiMethod, contact);
         }
 
@@ -51,7 +51,7 @@ namespace PingdomClient.Resources
         public Task<string> ModifyMultipleContacts(IEnumerable<int> contactIds, bool paused)
         {
             var requestBody = string.Format("contactids={0}&paused={1}", string.Join(",", contactIds), paused);
-            return Client.PutAsync<string>("contacts/", requestBody);
+            return Client.PutAsync<string>("notification_contacts/", requestBody);
         }
 
         /// <summary>
@@ -61,7 +61,7 @@ namespace PingdomClient.Resources
         /// <returns></returns>
         public Task<PingdomResponse> DeleteMultipleContacts(object contactIds)
         {
-            return Client.DeleteAsync<PingdomResponse>("contacts/", contactIds);
+            return Client.DeleteAsync<PingdomResponse>("notification_contacts/", contactIds);
         }
 
         /// <summary>
@@ -71,7 +71,7 @@ namespace PingdomClient.Resources
         /// <returns></returns>
         public Task<PingdomResponse> DeleteContact(int contactId)
         {
-            return Client.DeleteAsync<PingdomResponse>(string.Format("contacts/{0}", contactId));
+            return Client.DeleteAsync<PingdomResponse>(string.Format("notification_contacts/{0}", contactId));
         }
 
     }

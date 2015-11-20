@@ -16,7 +16,7 @@ namespace PingdomClient.Tests
         [Test]
         public async Task GetDetailedCheckInformationTest()
         {
-            var result = await Pingdom.Client.Checks.GetDetailedCheckInformation(837218);
+            var result = await Pingdom.Client.Checks.GetDetailedCheckInformation(1484163);
             Assert.IsTrue(result.Check.ContactIds.Any());
         }
 
@@ -61,7 +61,7 @@ namespace PingdomClient.Tests
             var createNewCheckResponse = await Pingdom.Client.Checks.CreateNewCheck(newCheck);
             Assert.IsNotNull(createNewCheckResponse);
             Assert.IsTrue(createNewCheckResponse.HasErrors);
-            Assert.IsNotNullOrEmpty(createNewCheckResponse.ErrorMessage);
+            Assert.That(createNewCheckResponse.ErrorMessage, Is.Not.Null.Or.Empty);
             Assert.AreEqual(createNewCheckResponse.Error.StatusCode, 400);
             Assert.AreEqual("Required parameter missing: type", createNewCheckResponse.Error.ErrorMessage);
         }
