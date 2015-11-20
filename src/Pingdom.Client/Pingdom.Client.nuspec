@@ -12,7 +12,7 @@
     <description>C# TypeSafe Client wrapper for Pingdom APIs v2.0 forked and updated from https://github.com/alanrsoares/pingdom.client</description>
     <tags> pingdom client typesafe c# restful </tags>
     <dependencies>
-      <dependency id="Newtonsoft.Json" version="7.0.1 />
+      <dependency id="Newtonsoft.Json" version="7.0.1" />
     </dependencies>
   </metadata>
 </package>
