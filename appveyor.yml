@@ -1,5 +1,6 @@
 skip_tags: true
 build:
+  project: src\Pingdom.Client.sln
   publish_nuget: true
   publish_nuget_symbols: true
   verbosity: minimal
