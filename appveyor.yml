@@ -1,0 +1,11 @@
+skip_tags: true
+build:
+  publish_nuget: true
+  publish_nuget_symbols: true
+  verbosity: minimal
+deploy:
+- provider: NuGet
+  server: https://www.myget.org/F/guildford-bc/api/v2/package
+  api_key:
+    secure: h3eHfgwbVOOvG9AtGlxEF0OCjTOnGVjoF+ZGBXCKxsv5xg8UUbtWRplQJr72yy8J
+  symbol_server: https://nuget.symbolsource.org/MyGet/guildford-bc
