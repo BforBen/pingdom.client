@@ -1,25 +1,18 @@
-﻿<?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<?xml version="1.0"?>
+<package>
   <metadata>
     <id>Pingdom.Client</id>
-    <version>2.0.8</version>
-    <title>Pingdom C# Client</title>
-    <authors>https://github.com/alanrsoares</authors>
-    <owners>https://github.com/alanrsoares</owners>
-    <projectUrl>https://github.com/alanrsoares/pingdom.client</projectUrl>
-    <iconUrl>http://fs02.androidpit.info/ali/05/72/12210572-1387007693349-144x144.png</iconUrl>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>https://github.com/BforBen</authors>
+    <owners>https://github.com/BforBen</owners>
+    <projectUrl>https://github.com/BforBen/pingdom.client</projectUrl>
+    <iconUrl>https://slack.global.ssl.fastly.net/19092/img/services/pingdom_128.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>C# TypeSafe Client wrapper for Pingdom APIs v2.0</description>
-    <tags>pingdom client  typesafe c# restful</tags>
+    <description>C# TypeSafe Client wrapper for Pingdom APIs v2.0 forked and updated from https://github.com/alanrsoares/pingdom.client</description>
+    <tags> pingdom client typesafe c# restful </tags>
     <dependencies>
-    	<dependency id="Newtonsoft.Json" version="5.0.8" />
+      <dependency id="Newtonsoft.Json" version="7.0.1 />
     </dependencies>
-    <frameworkAssemblies>      
-    </frameworkAssemblies>
-    <releaseNotes>Added summary.Performance to supported operations</releaseNotes>
   </metadata>
-  <files>
-    <file src="bin\Release\Pingdom.Client.dll" target="lib\net45" />
-    <file src="bin\Release\Pingdom.Client.pdb" target="lib\net45" />
-  </files>
 </package>
